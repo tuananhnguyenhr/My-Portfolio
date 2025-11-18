@@ -2,20 +2,20 @@ const translations = {
     en: {
         title: "Portfolio",
 
-        userName: "Stephen Jhon",
-        userNick: "(Scott)",
-        userPosition: "UI/UX & Web Developer",
+        userName: "Nguyen Tuan Anh",
+        userNick: "(Alex)",
+        userPosition: "HRM/HRBP/TA LEAD",
 
         navHome: "Home",
-        navAbout: "About",
-        navExperience: "experience",
+        navAbout: "About Me",
+        navExperience: "Experience",
         navPortfolio: "Portfolio",
         navContact: "Contact",
 
-        homeHello: "Hello!",
-        homeTitle: "I'm Stephen Jhon Scott",
-        homeDesc: "A professional UI/UX & full-stack web developer...",
-        homeBtn: "About me",
+        homeHello: "hello!",
+        homeTitle: "I am Tuan Anh",
+        homeDesc: "Here is some information about me. Feel free to reach out anytime.",
+        homeBtn: "About Me",
 
         aboutHeading: "About Me",
         aboutNameLabel: "Name:",
@@ -23,55 +23,141 @@ const translations = {
         aboutAgeLabel: "Age:",
         aboutAge: "3x",
         aboutQualiLabel: "Qualification:",
-        aboutQuali: "HRBP / HRM / Full Stack",
-        aboutPostLabel: "Position:",
-        aboutPost: "Full Stack Web Developer",
+        aboutQuali: "Human Resource Management - National Economics University",
+        aboutPostLabel: "Current Position:",
+        aboutPost: "Department/Team Lead (HR/Recruitment/C&B)",
         aboutLangLabel: "Language:",
-        aboutLang: "Vietnamese, English",
-        //aboutFacebook: "Follow",
+        aboutLang: "Basic English reading comprehension",
+        //aboutFacebook:"",
 
-        expYears: "6+",
-        expText: "Years of Experience",
-        expProject: "80+",
-        expProjectText: "Projects Completed",
-        expClients: "50+",
-        expClientsText: "Happy Clients",
-        expAwards: "10+",
-        expAwardsText: "Awards",
+        expYears: "10+",
+        expText: "Years of experience",
+        expProject: "20+",
+        expProjectText: "Clients",
+        expClients: "20k",
+        expClientsText: "CV Database (various fields)",
+        expAwards: "50+",
+        expAwardsText: "Directly managed staff",
 
-        expHeading: "My experience",
-        exp1Year: "2016",
-        exp1Title: "(O) Level",
-        exp1Desc: "Completed science field...",
+        expHeading: "Experience",
+        exp1Year: "2023-present",
+        exp1Title: "Freelance",
+        exp1Desc: `
 
-        // ...
-        // Thêm tiếp các mục khác
-        // ...
 
-        contactHeading: "Contact Me",
-        contactTitle: "Contact Info",
-        contactEmail: "service@freewebsitecode.com",
-        contactPhone1: "+880-12345678901",
-        contactAddress: "California, USA - 60598",
+
+
+
+
+
+
+
+
+
+        
+        
+        `,
+
+        exp2Year: "2020-present",
+        exp2Title: "Recruitment Specialist - Team Lead - Department Lead - Payroll Project PM - NMS Mobile Generation JSC",
+        exp2Desc: `1. Manage 2 recruitment teams: Non-IT (~6 members) and IT (~10 members)
+            - Manage recruitment workflow to ensure timely operations for departments and partners.
+            - Train processes, manage data, interview skills, and offer closure.
+            - Support problem-solving for arising issues.
+            - Recruit for various positions:
+            IT: Web/Mobile Product Manager, Designer, Senior Software Engineer (Java/Python/Golang/PHP), System Engineer, QC, Mobile Developer, HTML Developer, System Admin, Data Analyst, Business Analyst, Tester...
+            Mass: BPO (Telesales, Customer Service, Data Entry...)
+            Others: Accounting, Construction Engineer...
+
+            2. Build recruitment processes
+            - Develop internal processes and for partners, domestic and international.
+            - Establish KPI system for the team.
+
+            3. Payroll project management
+            - Monitor staff changes, plan recruitment, handle attendance and payroll.
+            - Service acceptance with partners.
+
+            4. Knowledge of labor law, insurance, tax
+            - Handle labor relations, early terminations, and legal matters.
+
+            5. Advise management on staffing needs, develop recruitment plans, handle assigned tasks.
+
+            6. Apply automation tools, self-code basic apps, use n8n, connect APIs to increase efficiency.
+
+            7. Manage own recruitment groups and multiple high-follow pages.`,
+
+        exp3Year: "2019-2020",
+        exp3Title: "Internal Recruitment Specialist - HRI International Resource JSC",
+        exp3Desc: `- Build and manage recruitment, sales, marketing, PO, and dev teams; recruit positions as requested.
+            - Recruit diverse roles, including senior positions.
+            - Manage, train, and guide telesales and interns; monitor performance.
+            - Propose effective recruitment solutions; use FB/LinkedIn tools to source and reach candidates.
+            - Plan recruitment for the company and outsource units.
+            - Support sourcing companies needing the company's services.
+            - Conduct onboarding training and guide new employees.
+            - Coordinate with admin and departments for interviews and onboarding.
+            - Conduct initial interviews for some positions, sales, and consultants.
+            - Increase social media engagement to boost company brand.
+            - Monitor, evaluate, report, and propose improvements to enhance efficiency.`,
+
+        exp4Year: "2017-2019",
+        exp4Title: "BELLSYSTEM24-HOASAO JSC",
+        exp4Desc: `- Source candidates via job boards, social media, and personal networks.
+            - Screen CVs, schedule interviews, and follow up with candidates.
+            - Attend job fairs and connect with colleges/universities.
+            - Manage files and official documents.
+            - Assist in planning and organizing seminars and company site tours.
+            - Communicate company info and job guidance to candidates before interviews.
+            - Track training progress and support departments (CS, training).
+            - Suggest creative recruitment solutions to increase efficiency.
+            - Participate in team activities, support media, and build company culture.
+            - Periodically report performance and perform other assigned tasks.`,
+
+        exp5Year: "2016-2017",
+        exp5Title: "Recruitment Staff - FPT Information Systems JSC",
+        exp5Desc: `- Screen job applications and enter data into the database.
+            - Post job ads, source, and collect applications.
+            - Schedule interviews, tests, and call candidates.
+            - Manage files, receive and send official documents.
+            - Assist in planning and organizing seminars.
+            - Track recruitment requests and compile records monthly.`,
+
+        exp6Year: "2016-2017",
+        exp6Title: "Recruitment Intern - M-Talent HR Management JSC",
+        exp6Desc: `- Assist Recruitment & HR Development in organizing events and programs; share job posts on social media: plan events, handle communications, organize, and support events.
+            - Promote company events and programs at universities.`,
+
+
+
+        portHeading: "Some picture",
+
+        contactHeading: "Contact for Work",
+        contactTitle: "Contact Information",
+        contactEmail: "tuananhnguyen.hr@gmail.com",
+        contactPhone1: "+84 904 17 8382",
+        contactPhone2: "+84 865 66 1080",
+        contactAddress: "Ha noi, Vietnam",
         contactBtn: "Send",
-    },
+        // … other English labels …
+    }
+,
 
     vi: {
         title: "Portfolio",
 
-        userName: "Stephen Jhon",
-        userNick: "(Scott)",
-        userPosition: "UI/UX & Web Developer",
+        userName: "Nguyễn Tuấn Anh",
+        userNick: "(Alex)",
+        userPosition: "HRM/HRBP/TA LEAD",
 
         navHome: "Trang chủ",
         navAbout: "Về tôi",
-        navexperience: "Kinh nghiệm",
+        navExperience: "Kinh nghiệm",
         navPortfolio: "Hình ảnh về tôi",
         navContact: "Liên hệ",
 
         homeHello: "xin chào!",
         homeTitle: "tôi là Tuấn Anh",
-        homeDesc: "Đây là 1 số thông tin về tôi, nếu bạn cần contact, hãy ",
+        homeDesc: "Đây là 1 số thông tin về tôi, nếu bạn cần contact, hãy liên hệ",
         homeBtn: "Về tôi",
 
         aboutHeading: "Về tôi",
@@ -99,7 +185,21 @@ const translations = {
         expHeading: "·Kinh nghiêm·",
         exp1Year: "2023-nay",
         exp1Title: "Freelance",
-        exp1Desc:   " ... ",
+        exp1Desc:   `
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        `,
 
 
         exp2Year: "2020-nay",
@@ -172,11 +272,14 @@ const translations = {
                     - Truyền thông các sự kiện, chương trình của Công ty tại trường Đại học`,
 
 
+        portHeading: "Hình ảnh",
+
         contactHeading: "Liên hệ công việc",
         contactTitle: "Thông tin liên hệ",
         contactEmail: "tuananhnguyen.hr@gmail.com",
-        contactPhone1: "+84 917 8382",
-        contactAddress: "HN-Việt Nam",
+        contactPhone1: "+84 904 17 8382",
+        contactPhone2: "+84 865 66 1080",
+        contactAddress: "Hà Nội - Việt Nam",
         contactBtn: "Gửi",
         // …
         // Các label tiếng Việt

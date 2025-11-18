@@ -62,3 +62,36 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     setLanguage(localStorage.getItem("lang") || "en");
 });
+
+
+// gửi mail
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault(); // chặn reload trang
+
+    const name = document.getElementById("contactName").value;
+    const email = document.getElementById("contactMail").value;
+    const project = document.getElementById("contactProject").value;
+    const message = document.getElementById("contactMessage").value;
+
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        project_name: project,
+        message: message
+    };
+
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+    .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset(); // xóa form
+    }, function(error) {
+        alert("Failed to send message: " + JSON.stringify(error));
+    });
+});
+
+// Tạo tài khoản EmailJS (https://www.emailjs.com/
+// ).
+
+// Tạo Service ID (dịch vụ email), Template ID (mẫu mail).
+
+// Thay "YOUR_USER_ID", "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID" bằng thông tin của bạn.

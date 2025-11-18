@@ -23,7 +23,9 @@
     </div>
     
 <div class="user">
-        <img src="images/profile.png" alt="Profile Picture">
+    <div class="profile-img">
+        <img src="images/profile.jpg" alt="Profile Picture">
+    </div>
         <h3 id="userName" class="name"></h3>
         <h3 id="userNick" class="nickname"></h3>
         <p id="userPosition" class="post"></p>
@@ -181,10 +183,10 @@
         </div>
 
         <form>
-            <input id="contactName" type="text" class="box">
-            <input id="contactMail" type="email" class="box">
-            <input id="contactProject" type="text" class="box">
-            <textarea id="contactMessage" cols="30" rows="10" class="box message"></textarea>
+            <input id="contactName" type="text" class="box" placeholder="name" >
+            <input id="contactMail" type="email" class="box" placeholder="email">
+            <input id="contactProject" type="text" class="box" placeholder="project">
+            <textarea id="contactMessage" cols="30" rows="10" class="box message" placeholder="message"></textarea>
             <button type="submit" class="btn" id="contactBtn"></button>
         </form>
 
@@ -198,6 +200,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/lang.js"></script>
 <script src="js/script.js"></script>
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+   (function(){
+       emailjs.init("tuananhnguyen.hr@gmail.com"); // thay YOUR_USER_ID bằng ID EmailJS của bạn
+   })();
+</script>
 </body>
 </html>
