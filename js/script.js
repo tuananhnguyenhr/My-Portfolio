@@ -36,3 +36,23 @@ $(document).ready(function(){
     });
   
   });
+
+
+function setLanguage(lang) {
+    const items = document.querySelectorAll("[id]");
+
+    items.forEach(el => {
+        const key = el.id.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+
+        if (langData[lang] && langData[lang][key]) {
+            el.innerHTML = langData[lang][key];
+        }
+    });
+
+    localStorage.setItem("siteLanguage", lang);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLanguage") || "en";
+    setLanguage(savedLang);
+});
