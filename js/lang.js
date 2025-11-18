@@ -81,15 +81,5 @@ const translations = {
     }
 };
 
-function setLanguage(lang) {
-    localStorage.setItem("lang", lang);
-
-    const data = translations[lang];
-    Object.keys(data).forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.innerHTML = data[id];
-    });
-}
-
 // load khi mở trang
 setLanguage(localStorage.getItem("lang") || "en");
