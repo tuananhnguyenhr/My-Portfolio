@@ -39,20 +39,19 @@ $(document).ready(function(){
 
 
 function setLanguage(lang) {
-    const items = document.querySelectorAll("[id]");
+    localStorage.setItem("lang", lang);
 
-    items.forEach(el => {
-        const key = el.id.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+    const data = translations[lang];
+    if (!data) return;
 
-        if (langData[lang] && langData[lang][key]) {
-            el.innerHTML = langData[lang][key];
+    Object.keys(data).forEach(key => {
+        const el = document.getElementById(key);
+        if (el) {
+            el.innerHTML = data[key];
         }
     });
-
-    localStorage.setItem("siteLanguage", lang);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("siteLanguage") || "en";
-    setLanguage(savedLang);
+    setLanguage(localStorage.getItem("lang") || "en");
 });
