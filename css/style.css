@@ -243,8 +243,8 @@ header .navbar ul li a:hover{
 }
 /* End About Section CSS */
 
-/* Start Education Section CSS */
-.education .box-container{
+/* Start Experience Section CSS */
+.experience .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,15 +253,16 @@ header .navbar ul li a:hover{
     padding-left: 3rem;
 }
 
-.education .box-container .box{
-    width:27rem;
-    margin:4rem 1rem;
+.experience .box-container .box{
+    width: calc((100% - 12rem) / 2); /* /2 = số ô/dòng */
+    margin: 1rem; /* khoảng cách giữa các ô */
     padding-left: 4rem;
+    padding-right: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
 }
 
-.education .box-container .box span{
+.experience .box-container .box span{
     font-size: 1.3rem;
     background:#222;
     color:#fff;
@@ -269,19 +270,19 @@ header .navbar ul li a:hover{
     padding:.5rem 2.5rem;
 }
 
-.education .box-container .box h3{
+.experience .box-container .box h3{
     font-size: 2rem;
     color:#fff;
     padding-top: 1.5rem;
 }
 
-.education .box-container .box p{
+.experience .box-container .box p{
     font-size: 1.4rem;
     color:#eee;
     padding: 1rem 0;
 }
 
-.education .box-container .box i{
+.experience .box-container .box i{
     position: absolute;
     top:-1.5rem; left:-2.5rem;
     height:5rem;
@@ -293,7 +294,7 @@ header .navbar ul li a:hover{
     color:#fff;
     background:var(--springGreen);
 }
-/* End Education Section CSS */
+/* End Experience Section CSS */
 
 /* Start Portfolio Section CSS */
 .portfolio .box-container{
@@ -306,7 +307,7 @@ header .navbar ul li a:hover{
 
 .portfolio .box-container .box{
     height: 20rem;
-    width:26rem;
+    width: calc((100% - 12rem) / 3); /* /2 = số ô/dòng */
     border-radius: 1rem;
     margin:2rem;
     overflow: hidden;
@@ -456,7 +457,7 @@ header .navbar ul li a:hover{
         width: 100%;
     }
  
-    .education .box-container .box{
+    .experience .box-container .box{
         width:100%;
     }
 

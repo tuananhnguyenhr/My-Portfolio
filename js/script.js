@@ -34,9 +34,9 @@ $(document).ready(function(){
       );
   
     });
+    
   
   });
-
 
 function setLanguage(lang) {
     localStorage.setItem("lang", lang);
@@ -46,11 +46,18 @@ function setLanguage(lang) {
 
     Object.keys(data).forEach(key => {
         const el = document.getElementById(key);
-        if (el) {
-            el.innerHTML = data[key];
-        }
+        if (!el) return;
+
+        // Nếu key là mô tả (Desc), convert \n thành <br>
+        el.innerHTML = data[key].replace(/(\r\n|\r|\n)/g, '<br>');
     });
 }
+
+// Khi tải trang
+document.addEventListener("DOMContentLoaded", () => {
+    setLanguage(localStorage.getItem("lang") || "en");
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
     setLanguage(localStorage.getItem("lang") || "en");
