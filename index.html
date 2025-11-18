@@ -3,182 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Portfolio</title>
+    <title>Portfolio</title>
 
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+    
+<!-- header section starts  -->
 
 <header>
+    <!--  -->
     <div class="language-switcher">
         <button onclick="setLanguage('vi')">Vie</button>
         <button onclick="setLanguage('en')">Eng</button>
     </div>
-
+    <!--  -->
+    
     <div class="user">
         <img src="images/profile.png" alt="Profile Picture">
-        <h3 id="userName" class="name"></h3>
-        <h3 id="userNick" class="nickname"></h3>
-        <p id="userPosition" class="post"></p>
+        <h3 class="name">Stephen Jhon</h3>
+        <h2 class="nickname">(Scott)</h3>
+        <p class="post">UI/UX & Web Developer</p>
     </div>
 
     <nav class="navbar">
         <ul>
-            <li><a id="navHome" href="#home"></a></li>
-            <li><a id="navAbout" href="#about"></a></li>
-            <li><a id="navEducation" href="#education"></a></li>
-            <li><a id="navPortfolio" href="#portfolio"></a></li>
-            <li><a id="navContact" href="#contact"></a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
+
 </header>
+
+<!-- header section ends -->
 
 <div id="menu" class="fas fa-bars"></div>
 
+<!-- home section starts  -->
+
 <section class="home" id="home">
-    <h3 id="homeHello"></h3>
-    <h1><span id="homeTitle"></span></h1>
-    <p id="homeDesc"></p>
-    <a href="#about"><button class="btn" id="homeBtn"></button></a>
+
+    <h3> Alex Xin chào !</h3>
+    <h1><span>I'm Stephen Jhon Scott</span></h1>
+    <p>A professional UI/UX & full-stack web developer. I completed several courses in HTML, CSS, javascript, bootstrap, SQL, PHP & WordPress. Aso I have coding skills in c++, java & C# programming language. 
+
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
 </section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
 
 <section class="about" id="about">
-    <h1 class="heading" id="aboutHeading"></h1>
 
-    <div class="row">
-        <div class="info">
-            <h3><span id="aboutNameLabel"></span> <span id="aboutName"></span></h3>
-            <h3><span id="aboutAgeLabel"></span> <span id="aboutAge"></span></h3>
-            <h3><span id="aboutQualiLabel"></span> <span id="aboutQuali"></span></h3>
-            <h3><span id="aboutPostLabel"></span> <span id="aboutPost"></span></h3>
-            <h3><span id="aboutLangLabel"></span> <span id="aboutLang"></span></h3>
-            <a href="https://www.facebook.com/tanhtanhHR">
-                <button class="btn" id="aboutFollow"></button>
-            </a>
-        </div>
+<h1 class="heading"> <span>about</span> me </h1>
 
-        <div class="counter">
-            <div class="box">
-                <span id="expYears"></span>
-                <h3 id="expText"></h3>
-            </div>
+<div class="row">
 
-            <div class="box">
-                <span id="expProject"></span>
-                <h3 id="expProjectText"></h3>
-            </div>
-
-            <div class="box">
-                <span id="expClients"></span>
-                <h3 id="expClientsText"></h3>
-            </div>
-
-            <div class="box">
-                <span id="expAwards"></span>
-                <h3 id="expAwardsText"></h3>
-            </div>
-        </div>
+    <div class="info">
+        <h3> <span> name : </span> Nguyen Tuan Anh (Alex Nguyen) </h3>
+        <h3> <span> age : </span> 3x </h3>
+        <h3> <span> qualification : </span> Human Resource / HRBP / HRM </h3>
+        <h3> <span> post : </span> Full Stack Web Developer </h3>
+        <h3> <span> language : </span> Vietnamese, English </h3>
+        <a href="https://www.facebook.com/tanhtanhHR"><button class="btn"><i class="fab fa-facebook-f"></i> Follow </button></a>
     </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>6+</span>
+            <h3>years of experience</h3>
+        </div>
+
+        <div class="box">
+            <span>80+</span>
+            <h3>porject completed</h3>
+        </div>
+
+        <div class="box">
+            <span>50+</span>
+            <h3>happy clients</h3>
+        </div>
+
+        <div class="box">
+            <span>10+</span>
+            <h3>awards won</h3>
+        </div>
+
+    </div>
+
+</div>
+
 </section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
 
 <section class="education" id="education">
-    <h1 class="heading" id="eduHeading"></h1>
 
-    <div class="box-container">
+<h1 class="heading"> my <span>education</span> </h1>
 
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu1Year"></span>
-            <h3 id="edu1Title"></h3>
-            <p id="edu1Desc"></p>
-        </div>
+<div class="box-container">
 
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu2Year"></span>
-            <h3 id="edu2Title"></h3>
-            <p id="edu2Desc"></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu3Year"></span>
-            <h3 id="edu3Title"></h3>
-            <p id="edu3Desc"></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu4Year"></span>
-            <h3 id="edu4Title"></h3>
-            <p id="edu4Desc"></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu5Year"></span>
-            <h3 id="edu5Title"></h3>
-            <p id="edu5Desc"></p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span id="edu6Year"></span>
-            <h3 id="edu6Title"></h3>
-            <p id="edu6Desc"></p>
-        </div>
-
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2016</span>
+        <h3>Completed (O) Level</h3>
+        <p>It was a 10-years journey of my high school life. Completed (o) level from science dept. Got GPA: 5. 0 out of 5. 00</p>
     </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>Completed (A) Level</h3>
+        <p>It was wonderfull time in my life. Finally completed (a) level  also from science dept. Got GPA: 5. 00 out of 5. 00 & it's the stage of my life. </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>B.Sc in CSE</h3>
+        <p>After the (A) level exam, i  get good subjects from my science dept. And finally i have to keep up my study so i got admission in b. Sc in cse. I feel happy cause it's helped me to find job. </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>Fontend Web Developer</h3>
+        <p>After getting admission to B.Sc in CSE. I have done courses in HTML, CSE & javascript and got quite better skills & joined as a front-end web developer. There I learned practically to build a website project.  </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018</span>
+        <h3>Backend Web Developer</h3>
+        <p>I was always interested with it world. That was my inspiration to complete php, mysql etc. Now i am certified web developer & wordpress expert. Now i am doing regularly practice of my work. </p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2016</span>
+        <h3>Graphics Design</h3>
+        <p>I started my graphics course at my home after seeing so many tutorials. I am now an expert in vector & logo design work. I am skilled in photoshop & illustrator & so on I learned from my home by the good will of the internet.</p>
+    </div>
+
+</div>
+
 </section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
 
 <section class="portfolio" id="portfolio">
-    <h1 class="heading" id="portHeading"></h1>
 
-    <div class="box-container">
-        <div class="box"><img src="images/1.jpeg"></div>
-        <div class="box"><img src="images/2.jpg"></div>
-        <div class="box"><img src="images/3.jpg"></div>
-        <div class="box"><img src="images/4.jpg"></div>
-        <div class="box"><img src="images/5.png"></div>
-        <div class="box"><img src="images/6.jpg"></div>
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/1.jpeg" alt="">
     </div>
+
+    <div class="box">
+        <img src="images/2.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/3.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/5.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/6.jpg" alt="">
+    </div>
+
+</div>
+
 </section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
 
 <section class="contact" id="contact">
-    <h1 class="heading" id="contactHeading"></h1>
 
-    <div class="row">
+<h1 class="heading"> <span>contact</span> me </h1>
 
-        <div class="content">
-            <h3 class="title" id="contactTitle"></h3>
+<div class="row">
 
-            <div class="info">
-                <h3 class="lower"><i class="fas fa-envelope"></i> <span id="contactEmail"></span></h3>
-                <h3><i class="fas fa-phone"></i> <span id="contactPhone1"></span></h3>
-                <h3><i class="fas fa-phone"></i> <span id="contactPhone2"></span></h3>
-                <h3><i class="fas fa-map-marker-alt"></i> <span id="contactAddress"></span></h3>
-            </div>
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3 class="lower"> <i class="fas fa-envelope"></i> service@freewebsitecode.com </h3>
+            <h3> <i class="fas fa-phone"></i> +880-12345678901 </h3>
+            <h3> <i class="fas fa-phone"></i> +880-12345678902 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> California, USA - 60598. </h3>
         </div>
 
-        <form>
-            <input id="contactName" type="text" class="box">
-            <input id="contactMail" type="email" class="box">
-            <input id="contactProject" type="text" class="box">
-            <textarea id="contactMessage" cols="30" rows="10" class="box message"></textarea>
-            <button type="submit" class="btn" id="contactBtn"></button>
-        </form>
-
     </div>
+
+    <form action="">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+
 </section>
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
 
 <a href="#home" class="top">
     <img src="images/scroll.png" alt="Scroll For Top">
 </a>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/lang.js"></script>
+
+<!-- custom js file link  -->
 <script src="js/script.js"></script>
+
 
 </body>
 </html>
